@@ -19,15 +19,15 @@ $('#pauseButton').click(function() {
 
 function breakTime() {
 	
-  $( "#breakTimerInfo").toggle( "slow", function() { $.playSound('audio/break');
+  $( "#breakTimerInfo").toggle( 0, function() { $.playSound('audio/break');
   });
 
   
 
-  $( "#startingBlock").toggle( "slow", function() {
+  $( "#startingBlock").toggle( 0, function() {
   });
 
-	$('#breakTimer').countdown({until: 0,  
+	$('#breakTimer').countdown({until: 300,  
     onExpiry: breakTime, format:'MS'}); 
  
 	$('#breakTimerStart').click(function() { 
@@ -43,6 +43,6 @@ function breakTime() {
 
 	}; 
 
-
+$(".alert").alert()
 });
 

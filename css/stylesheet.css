@@ -1,50 +1,128 @@
-h1 {text-align:center;}
-#timer { margin:auto; }
-#breakTimer { margin:auto;  }
-#breakTimerInfo {display:none;}
-input#mce-EMAIL {width: 30%; margin: 2% 0 4% 0; }
-h1.title {margin:auto; text-align:center;}
-.startingBlock {margin:auto; text-align:center;}
-.navbar-brand img {max-width:100px; margin-top:-10%;}
-p {text-align:center;}
-div.row {text-align:center;}
-div#newsletter {background-color:#1E3855; color:white;}
-div#acetimer {background-color:#C94747; color:white;}
-div#main {background-color:#7C1B1B; padding:5%; border-radius:10px;}
-.lead {background-color:#640D0D; padding:5%; border-radius:10px;}
-.lead img {margin-bottom:2%; max-width:60%;}
-.lead a {color:#C43B3B;}
+@font-face {
+  font-family: LED;
+  src: url("../fonts/digital-7.ttf"); }
+.alert-success {
+  font-size: 1.8em;
+  margin-bottom: 0; }
+
+.alert-info {
+  font-size: 1.8em;
+  margin-bottom: 0;
+  margin-top: 3%; }
+
+button#pauseButton {
+  background: red;
+  font-size: 2em;
+  color: white; }
+
+button#breakPauseButton {
+  background: red;
+  font-size: 2em;
+  color: white; }
+
+button#breakTimerStart {
+  background: green;
+  font-size: 2em;
+  color: white; }
+
+button#timerStart {
+  background: green;
+  font-size: 2em;
+  color: white; }
+
+.jumbotron#acetimer {
+  padding: 0;
+  background: 0; }
+
+h1, h2 {
+  text-align: center;
+  color: black; }
+
+h1.break-message {
+  color: black; }
+
+#timer {
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 0 10% 0 10%;
+  margin-bottom: 3%;
+  font-family: LED, sans-serif;
+  color: black; }
+
+#breakTimer {
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 0 10% 0 10%;
+  margin-bottom: 3%;
+  font-family: LED, sans-serif;
+  color: black; }
+
+#breakTimerInfo {
+  display: none; }
+
+input#mce-EMAIL {
+  width: 30%;
+  margin: 2% 0 4% 0; }
+
+h1.title {
+  margin: auto;
+  text-align: center; }
+
+.startingBlock {
+  margin: auto;
+  text-align: center; }
+
+.navbar-brand img {
+  max-width: 100px;
+  margin-top: -10%; }
+
+p {
+  text-align: center; }
+
+div.row {
+  text-align: center; }
+
+div#newsletter {
+  background-color: #1E3855;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+div#acetimer {
+  color: white; }
+
+div#main {
+  background-color: #FFF; }
+
+.lead {
+  color: black; }
+
+.lead img {
+  margin-bottom: 2%;
+  max-width: 60%; }
+
+.lead a {
+  color: #C43B3B; }
 
 @media all and (max-device-width: 480px) {
-    .changeThisFont {
-        font-size: 0.5em;
-    }
-}
-
+  .changeThisFont {
+    font-size: 0.5em; } }
 /* jQuery Countdown styles 2.0.0. */
-
 .is-countdown {
-	margin:auto auto 4% auto;
-	font-size:2.6em;
-}
+  margin: auto auto 4% auto;
+  font-size: 2.6em; }
 
-
-.countdown-period { clear:both; }
+.countdown-period {
+  clear: both; }
 
 .countdown-row {
-
-	text-align: center;
-
-}
-
+  text-align: center; }
 
 .countdown-section {
+  text-align: center; }
 
-	text-align: center;
-	
-}
 .countdown-amount {
-    font-size:2.4em;
-
-}
-
+  font-size: 3em;
+  margin-right: 2%; }

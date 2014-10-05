@@ -16,7 +16,7 @@
         <script src="js/jquery.playSound.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="css/cover.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
             <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,22 +55,14 @@
       </div>
     </div>
 
-
-    <div class="container">
-
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron" id="acetimer">
-            <p class="lead">
-<img class="acetimer" src="img/acetimer.png"><br />
-            Use this simple Pomodoro tool to stay on task for 25 minutes, then take a 5 minute break. If you have any questions or comments, please send me a <a href="http://www.52aces.com/contact/">message</a>.</p>
+<div class="jumbotron" id="acetimer">
+<div class="container">
 <div class="row" id="main">
-        <div class="col-md-2">&nbsp;</div>
-        <div class="col-md-8">
+<div class="col-md-2">&nbsp;</div>
+<div class="col-md-8">
+<img class="acetimer" src="img/acetimer.png"><br />
 
 <div id="startingBlock">
-<h2 class="instructions">Press "Start/Reset" to begin.</h3>
-<hr>
 
 <div id="timer" class="contins-timer"></div>
 <button class="btn btn-lg btn-default" id="pauseButton">Pause</button>
@@ -78,16 +70,21 @@
 </div>
 
 <div id="breakTimerInfo">
-<h1 class="break-message">Break time!</h1>
 <hr>
+<div class="alert alert-success" role="alert">Congratulations, you've earned a break.</div>
 <div id="breakTimer"></div>
 <button class="btn btn-lg btn-default" id="breakPauseButton">Pause</button>
 <button class="btn btn-lg btn-default" id="breakTimerStart">Start/Reset</button>
-</div></div>
-        
-
-
 </div>
+
+          <div class="alert alert-info" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Use this simple Pomodoro tool to stay on task for 25 minutes, then take a 5 minute break. If you have any questions or comments, please send me a <a href="http://www.52aces.com/contact/">message</a>.</div>
+</div>
+</div>
+</div>
+</div>
+
 <div class="col-md-2">&nbsp;</div>
 </div>
 
