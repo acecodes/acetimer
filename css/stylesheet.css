@@ -65,7 +65,7 @@ h1.break-message {
   display: none; }
 
 input#mce-EMAIL {
-  width: 30%;
+  width: 50%;
   margin: 2% 0 4% 0; }
 
 h1.title {
@@ -109,8 +109,25 @@ div#main {
   color: #C43B3B; }
 
 @media all and (max-device-width: 480px) {
-  .changeThisFont {
-    font-size: 0.5em; } }
+  img.acetimer {
+    max-width: 60%;
+    max-height: 60%; }
+
+  input#mce-EMAIL {
+    width: 90%;
+    margin: 2% 0 4% 0; }
+
+  .alert-success {
+    font-size: 1.0em;
+    margin-bottom: 0; }
+
+  .alert-info {
+    font-size: 1.0em;
+    margin-bottom: 0;
+    margin-top: 3%; }
+
+  div#newsletter {
+    font-size: 1.0em; } }
 /* jQuery Countdown styles 2.0.0. */
 .is-countdown {
   margin: auto auto 4% auto;

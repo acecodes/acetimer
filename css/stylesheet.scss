@@ -33,7 +33,7 @@ h1.break-message {color:black;}
 #timer { @include clock; }
 #breakTimer { @include clock;  }
 #breakTimerInfo {display:none;}
-input#mce-EMAIL {width: 30%; margin: 2% 0 4% 0; }
+input#mce-EMAIL {width: 50%; margin: 2% 0 4% 0; }
 h1.title {margin:auto; text-align:center;}
 .startingBlock {margin:auto; text-align:center;}
 .navbar-brand img {max-width:100px; margin-top:-10%;}
@@ -47,9 +47,17 @@ div#main {background-color:#FFF; }
 .lead a {color:#C43B3B;}
 
 @media all and (max-device-width: 480px) {
-    .changeThisFont {
-        font-size: 0.5em;
+    img.acetimer {
+        max-width:60%;
+        max-height:60%;
     }
+
+	input#mce-EMAIL {width: 90%; margin: 2% 0 4% 0; }
+
+	.alert-success {font-size:1.0em; margin-bottom:0;}
+    .alert-info {font-size:1.0em; margin-bottom:0; margin-top:3%;}
+
+    div#newsletter {font-size:1.0em;}
 }
 
 /* jQuery Countdown styles 2.0.0. */
