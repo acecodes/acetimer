@@ -1,90 +1,159 @@
+a {
+    color:#032245;
+}
+a:hover {
+    color:#032245;
+    text-decoration: underline;
+}
 @font-face {
-	font-family:LED;
-	src: url('../fonts/digital-7.ttf');
+    font-family: LED;
+    src: url('../fonts/digital-7.ttf');
 }
-
-@mixin stop-button {background:red; font-size:2em; color:white;}
-@mixin start-button {background:green; font-size:2em; color:white;}
-
+@mixin stop-button {
+    background: red;
+    font-size: 2em;
+    color: white;
+}
+@mixin start-button {
+    background: green;
+    font-size: 2em;
+    color: white;
+}
 @mixin clock {
-	margin:auto;
-	background:white;
-	border-radius:10px;
-	padding:0 10% 0 10%;
-	margin-bottom:3%;
-	font-family:LED, sans-serif;
-	color:black;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 0 10% 0 10%;
+    margin-bottom: 3%;
+    font-family: LED, sans-serif;
+    color: black;
 }
-
-.alert-success {font-size:1.5em; margin-bottom:0;}
-.alert-info {font-size:1.5em; margin-bottom:0;}
-.alert {margin-top:4%;}
-
-button#pauseButton { @include stop-button; }
-button#breakPauseButton { @include stop-button; }
-button#breakTimerStart { @include start-button; }
-button#timerStart { @include start-button; }
-
-
-.jumbotron#acetimer {padding:0; background:0;}
-
-h1, h2 {text-align:center; color:black;}
-h1.break-message {color:black;}
-#timer { @include clock; }
-#breakTimer { @include clock;  }
-#breakTimerInfo {display:none;}
-input#mce-EMAIL {width: 50%; margin: 2% 0 4% 0; }
-h1.title {margin:auto; text-align:center;}
-.startingBlock {margin:auto; text-align:center;}
-.navbar-brand img {max-width:100px; margin-top:-10%;}
-p {text-align:center;}
-div.row {text-align:center;}
-div#newsletter {background-color:#1E3855; color:white; padding-left:10%; padding-right:10%;}
-div#acetimer { color:white;}
-div#main {background-color:#FFF; }
-.lead {color:black;}
-.lead img {margin-bottom:2%; max-width:60%;}
-.lead a {color:#C43B3B;}
-
-@media all and (max-device-width: 480px) {
+.alert-success {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.alert-info {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.alert {
+    margin-top: 4%;
+}
+button#pauseButton {
+    @include stop-button;
+}
+button#breakPauseButton {
+    @include stop-button;
+}
+button#breakTimerStart {
+    @include start-button;
+}
+button#timerStart {
+    @include start-button;
+}
+.jumbotron#acetimer {
+    padding: 0;
+    background: 0;
+}
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+h1.break-message {
+    color: black;
+}
+#timer {
+    @include clock;
+}
+#breakTimer {
+    @include clock;
+}
+#breakTimerInfo {
+    display: none;
+}
+input#mce-EMAIL {
+    width: 50%;
+    margin: 2% 0 4% 0;
+}
+h1.title {
+    margin: auto;
+    text-align: center;
+}
+.startingBlock {
+    margin: auto;
+    text-align: center;
+}
+.navbar-brand img {
+    max-width: 100px;
+    margin-top: -10%;
+}
+p {
+    text-align: center;
+}
+div.row {
+    text-align: center;
+}
+div#newsletter {
+    background-color: #2668B0;
+    color: white;
+    padding: 2%;
+    font-size: 1.2em;
+    margin-top:2%;
+}
+div#acetimer {
+    color: white;
+}
+div#main {
+    background-color: #FFF;
+}
+.lead {
+    color: black;
+}
+.lead img {
+    margin-bottom: 2%;
+    max-width: 60%;
+}
+.lead a {
+    color: #C43B3B;
+}
+@media all and (max-device-width:480px) {
     img.acetimer {
-        max-width:60%;
-        max-height:60%;
+        max-width: 60%;
+        max-height: 60%;
     }
-
-	input#mce-EMAIL {width: 90%; margin: 2% 0 4% 0; }
-
-	.alert-success {font-size:1.0em; margin-bottom:0;}
-    .alert-info {font-size:1.0em; margin-bottom:0; margin-top:3%;}
-
-    div#newsletter {font-size:1.0em;}
+    input#mce-EMAIL {
+        width: 90%;
+        margin: 2% 0 4% 0;
+    }
+    .alert-success {
+        font-size: 1.0em;
+        margin-bottom: 0;
+    }
+    .alert-info {
+        font-size: 1.0em;
+        margin-bottom: 0;
+        margin-top: 3%;
+    }
+    div#newsletter {
+        font-size: 1.0em;
+    }
 }
 
 /* jQuery Countdown styles 2.0.0. */
-
 .is-countdown {
-	margin:auto auto 4% auto;
-	font-size:2.6em;
+    margin: auto auto 4% auto;
+    font-size: 2.6em;
 }
-
-
-.countdown-period { clear:both; }
-
+.countdown-period {
+    clear: both;
+}
 .countdown-row {
-
-	text-align: center;
-
+    text-align: center;
 }
-
-
 .countdown-section {
-
-	text-align: center;
-	
+    text-align: center;
 }
 .countdown-amount {
-    font-size:3em;
-    margin-right:2%;
-
+    font-size: 3em;
+    margin-right: 2%;
 }
-
